@@ -37,7 +37,7 @@ body{
 .header-left-1 button {  
     padding: 12px 15px;
     background-color: white;
-    /* border: 1px solid #F2F3F5; */
+    border: 1px solid #F2F3F5;
     color: #8A92A3;
     margin-right: 25px;
 }
