@@ -11,24 +11,21 @@ body{
     justify-content: center;
     width: 100%;
     height: 65px;
-    border: 1px solid black;
 }
 .header-inner{
     width: 99vw;
-    /* background-color: cyan; */
     display: flex;
 }
 .header-logo{
  /* width: 126px; */
- height: 65px;
- flex-grow: 0;
- flex-shrink: 0;
+    height: 65px;
+    flex-grow: 0;
+    flex-shrink: 0;
 
 }
 
 .header-left{
-    width: 45%;
-    /* background-color: chartreuse; */
+    max-width: 45%  ;
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -37,45 +34,75 @@ body{
 .header-left-1 button {  
     padding: 12px 15px;
     background-color: white;
-    /* border: 1px solid #F2F3F5; */
     color: #8A92A3;
     margin-right: 25px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 .header-left-1 button:hover{
     background-color:  #F2F3F5;
+    border: 1px solid rgb(215, 217, 219);
+    ;
+
 }
 .header-left-2{
     display: flex;
     justify-content: center;
     flex-grow: 1;
     flex-shrink: 0;
+   
 
 }
-
+.header-left-2 :nth-child(1){
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;  
+       
+}
 .header-left-2 div button{
     color: #EC565B;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 5px;
 }
 .header-left-2 div input{
     display: flex;    
     width: 100%;
-    flex-grow: 1;
-    flex-shrink: 0; 
     outline: none;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
-/*hello*/
+
+
 .header-left-2 div input,button{
     height: 44px;
     border: none;
     background-color:#F2F3F5;
     padding: 10px;
-    flex-grow: 0;
-    flex-shrink: 0; 
+    
+    
     
 }
 .header-right{
-    width: 535.42px;
+    position: relative;  
     height: 65px;
-background-color: blue;
+    width: 50%;
+/* background-color: blue; */
     flex-grow: 0;
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    display: flex;    
+    align-items: center;
+}
+.header-right div button{
+    padding: 0 20px;
+    background-color: white;
+    color: #757A85;
+    border: 1px solid white;
+
+}
+.header-right div button:hover{
+    background-color: #F2F3F5;
+    border: 1px solid rgb(215, 217, 219);
+
+
 }
