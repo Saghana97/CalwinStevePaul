@@ -9,6 +9,7 @@
     <title>Udemy</title>
 </head>
 <body>
+    <script src="script.js"></script>
     <div class="header">
         <div class="header-inner">
             <div class="header-logo">
@@ -80,7 +81,7 @@
                 </div>
                 
             </div>
-            <div class="main-content-3-element-2">
+            <div class="main-content-3-element-2" >
                 <div class="main-content-3-element-2-subelement-1">
                     <div>Design</div>
                     <div>Photography</div>
@@ -90,48 +91,598 @@
                     <div>Personal Development</div>
                     
                 </div>
-                
                 <div class="main-content-3-element-2-subelement-2">
-                    <div class="main-content-3-element-2-subelement-2-elements">
-                        <a href="#">
-                            <div><img src="images/bigimg1.jpg" height="40%" width="100%"></div>
-                            <div class="main-content-3-element-2-subelement-2-elements-text">
-                                <b>The Business Intelligence Analyst Course 2019</b>
-                                <p>365 Careers</p>
-                                <div style="border-color: teal;"></div>
-
-
-                            </div>
-                            
-                            
-                        </a>
-                    </div>
-                    <div class="main-content-3-element-2-subelement-2-elements">
-                        <a href="#">
-                            <div><img src="images/bigimg2.jpg" height="40%" width="100%"></div>
-                            <div class="main-content-3-element-2-subelement-2-elements-text">
-                                <b>Introduction to Finance, Accounting, Modeling and Valuation</b>
-                                <p>Chris Haroun</p>
-                                <div style="border-color: teal;"></div>
-
-                            </div>
-                        </a>
-                    </div>
-                    <div class="main-content-3-element-2-subelement-2-elements">
-                        <a href="#">
-                            <div><img src="images/bigimg3.jpg" height="40%" width="100%"></div>
-                            <div class="main-content-3-element-2-subelement-2-elements-text">
-                                <b>The Complete Investment Banking Course 2019</b>
-                                <p>365 Careers</p>
-                                <div style="border-color: teal;"></div>
-
-                            </div>
-                        </a>    
-                    </div>
-                    <div>
-                        <button class="main-content-3-element-2-subelement-2-button"><i class="fas fa-chevron-right"></i></button>
+                    <div class="main-content-3-element-2-subelement-2-2" id="main-content-3-element-2-subelement-2-2">
+                        <div class="main-content-3-element-2-subelement-2-elements">
+                            <a href="#">
+                                <div><img src="images/bigimg1.jpg" height="40%" width="100%"></div>
+                                <div class="main-content-3-element-2-subelement-2-elements-text">
+                                    <b>The Business Intelligence Analyst Course 2019</b>
+                                    <p>365 Careers</p>
+                                    <div class="star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span style="font-weight: bold;">4.5</span>
+                                        <span>(16,843)</span>
+                                    </div>
+    
+    
+                                </div>
+                                
+                                
+                            </a>
+                        </div>
+                        <div class="main-content-3-element-2-subelement-2-elements" >
+                            <a href="#">
+                                <div><img src="images/bigimg2.jpg" height="40%" width="100%"></div>
+                                <div class="main-content-3-element-2-subelement-2-elements-text">
+                                    <b>Introduction to Finance, Accounting and Valuation</b>
+                                    <p>Chris Haroun</p>
+                                    <div>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span style="font-weight: bold;">3.5</span>
+                                            <span>(9,463)</span>
+                                        </div>
+        
+                                    </div>
+    
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main-content-3-element-2-subelement-2-elements" >
+                            <a href="#">
+                                <div><img src="images/bigimg3.jpg" height="40%" width="100%"></div>
+                                <div class="main-content-3-element-2-subelement-2-elements-text">
+                                    <b>The Complete Investment Banking Course 2019</b>
+                                    <p>365 Careers</p>
+                                    <div>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span style="font-weight: bold;">4.0</span>
+                                            <span>(14,352)</span>
+                                        </div>
+        
+                                    </div>
+    
+                                </div>
+                            </a>    
+                        </div>
+                        
+                        <div>
+                            <button class="main-content-3-element-2-subelement-2-button" id="btn-right" onclick="moveright()"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div>
+                            <button class="main-content-3-element-2-subelement-2-button" id="btn-left" onclick="moveleft()"><i class="fas fa-chevron-left"></i></button>
+                        </div>
+                        <div class="main-content-3-element-2-subelement-2-elements">
+                            <a href="#">
+                                <div><img src="images/bigimg4.jpg" height="40%" width="100%"></div>
+                                <div class="main-content-3-element-2-subelement-2-elements-text">
+                                    <b>The Business Intelligence Analyst Course 2019</b>
+                                    <p>365 Careers</p>
+                                    <div class="star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span style="font-weight: bold;">4.5</span>
+                                        <span>(16,843)</span>
+                                    </div>
+    
+    
+                                </div>
+                                
+                                
+                            </a>
+                        </div>
+                        <div class="main-content-3-element-2-subelement-2-elements">
+                            <a href="#">
+                                <div><img src="images/bigimg5.jpg" height="40%" width="100%"></div>
+                                <div class="main-content-3-element-2-subelement-2-elements-text">
+                                    <b>iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp</b>
+                                    <p>Angela Yu</p>
+                                    <div class="star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        
+                                        <span style="font-weight: bold;">3.0</span>
+                                        <span>(10,843)</span>
+                                    </div>
+    
+    
+                                </div>
+                                
+                                
+                            </a>
+                        </div>
+                        <div class="main-content-3-element-2-subelement-2-elements">
+                            <a href="#">
+                                <div><img src="images/bigimg6.jpg" height="40%" width="100%"></div>
+                                <div class="main-content-3-element-2-subelement-2-elements-text">
+                                    <b>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</b>
+                                    <p>Jonas Schmedtmann</p>
+                                    <div class="star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span style="font-weight: bold;">4.5</span>
+                                        <span>(26,135)</span>
+                                    </div>
+    
+    
+                                </div>
+                                
+                                
+                            </a>
+                        </div>
+                        
+                       
                     </div>
                 </div>
+                
+            </div>
+        </div>
+
+        <div class="main-content-4">
+            <div class="main-content-4-align">
+                <div class="main-content-4-elements">
+                    <img src="images/content-4-img-1.svg">
+                    <span>
+                        <b>Go at your own pace</b>
+                        <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+                    </span>
+                </div>
+                <div class="main-content-4-elements">
+                    <img src="images/content-4-img-2.svg">
+                    <span>
+                        <b>Learn from industry experts</b>
+                        <p>Select from top instructors around the world</p>
+                    </span>
+                </div>
+                <div class="main-content-4-elements">
+                    <img src="images/content-4-img-3.svg">
+                    <span>
+                        <b>Find video courses on almost any topic</b>
+                        <p>Build your library for your career and personal growth</p>
+                    </span>
+                </div>
+
+            </div>
+           
+        </div>
+        <div class="main-content-5">
+            <div class="main-content-5-align">
+                <p>Students are viewing</p>
+                <span>
+                    <button  id="main-content-5-btn-left" onclick="left()"><i class="fas fa-chevron-left"></i></button>
+
+                    <button id="main-content-5-btn-right" onclick="right()"><i class="fas fa-chevron-right"></i></button>
+                    
+                   
+                   
+                </span>
+                <div class="main-content-5-element">
+                        <div id="scroll">
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg1.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>The Business Intelligence Analyst Course 2019</b>
+                                        <p>365 Careers</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span style="font-weight: bold;">4.5</span>
+                                            <span>(16,843)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements" >
+                                <a href="#">
+                                    <div><img src="images/bigimg2.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>Introduction to Finance, Accounting and Valuation</b>
+                                        <p>Chris Haroun</p>
+                                        <div>
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <span style="font-weight: bold;">3.5</span>
+                                                <span>(9,463)</span>
+                                            </div>
+            
+                                        </div>
+        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg1.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>The Business Intelligence Analyst Course 2019</b>
+                                        <p>365 Careers</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span style="font-weight: bold;">4.5</span>
+                                            <span>(16,843)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements" >
+                                <a href="#">
+                                    <div><img src="images/bigimg2.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>Introduction to Finance, Accounting and Valuation</b>
+                                        <p>Chris Haroun</p>
+                                        <div>
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <span style="font-weight: bold;">3.5</span>
+                                                <span>(9,463)</span>
+                                            </div>
+            
+                                        </div>
+        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements" >
+                                <a href="#">
+                                    <div><img src="images/bigimg3.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>The Complete Investment Banking Course 2019</b>
+                                        <p>365 Careers</p>
+                                        <div>
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span style="font-weight: bold;">4.0</span>
+                                                <span>(14,352)</span>
+                                            </div>
+            
+                                        </div>
+        
+                                    </div>
+                                </a>    
+                            </div>
+                            
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg4.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>The Business Intelligence Analyst Course 2019</b>
+                                        <p>365 Careers</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span style="font-weight: bold;">4.5</span>
+                                            <span>(16,843)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg5.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp</b>
+                                        <p>Angela Yu</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            
+                                            <span style="font-weight: bold;">3.0</span>
+                                            <span>(10,843)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg6.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</b>
+                                        <p>Jonas Schmedtmann</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span style="font-weight: bold;">4.5</span>
+                                            <span>(26,135)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements" >
+                                <a href="#">
+                                    <div><img src="images/bigimg3.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>The Complete Investment Banking Course 2019</b>
+                                        <p>365 Careers</p>
+                                        <div>
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span style="font-weight: bold;">4.0</span>
+                                                <span>(14,352)</span>
+                                            </div>
+            
+                                        </div>
+        
+                                    </div>
+                                </a>    
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg1.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>The Business Intelligence Analyst Course 2019</b>
+                                        <p>365 Careers</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span style="font-weight: bold;">4.5</span>
+                                            <span>(16,843)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements" >
+                                <a href="#">
+                                    <div><img src="images/bigimg2.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>Introduction to Finance, Accounting and Valuation</b>
+                                        <p>Chris Haroun</p>
+                                        <div>
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <span style="font-weight: bold;">3.5</span>
+                                                <span>(9,463)</span>
+                                            </div>
+            
+                                        </div>
+        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements" >
+                                <a href="#">
+                                    <div><img src="images/bigimg3.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>The Complete Investment Banking Course 2019</b>
+                                        <p>365 Careers</p>
+                                        <div>
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span style="font-weight: bold;">4.0</span>
+                                                <span>(14,352)</span>
+                                            </div>
+            
+                                        </div>
+        
+                                    </div>
+                                </a>    
+                            </div>
+                            
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg4.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>The Business Intelligence Analyst Course 2019</b>
+                                        <p>365 Careers</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span style="font-weight: bold;">4.5</span>
+                                            <span>(16,843)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg5.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp</b>
+                                        <p>Angela Yu</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            
+                                            <span style="font-weight: bold;">3.0</span>
+                                            <span>(10,843)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg6.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</b>
+                                        <p>Jonas Schmedtmann</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span style="font-weight: bold;">4.5</span>
+                                            <span>(26,135)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg4.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>The Business Intelligence Analyst Course 2019</b>
+                                        <p>365 Careers</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span style="font-weight: bold;">4.5</span>
+                                            <span>(16,843)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg5.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp</b>
+                                        <p>Angela Yu</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            
+                                            <span style="font-weight: bold;">3.0</span>
+                                            <span>(10,843)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                            <div class="main-content-3-element-2-subelement-2-elements">
+                                <a href="#">
+                                    <div><img src="images/bigimg6.jpg" height="40%" width="100%"></div>
+                                    <div class="main-content-3-element-2-subelement-2-elements-text">
+                                        <b>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</b>
+                                        <p>Jonas Schmedtmann</p>
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span style="font-weight: bold;">4.5</span>
+                                            <span>(26,135)</span>
+                                        </div>
+        
+        
+                                    </div>
+                                    
+                                    
+                                </a>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-6">
+            <div class="content-6-align">
+                <h1>
+                    Get personalized recommendations</h1>
+                <p>
+                    Answer a few questions for your top picks
+                </p>
+                <button>
+                    Get Started
+                </button>
             </div>
         </div>
     </div>
