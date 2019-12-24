@@ -9,7 +9,6 @@
     <title>Udemy</title>
 </head>
 <body>
-    <script src="script.js"></script>
     <div class="header">
         <div class="header-inner">
             <div class="header-logo">
@@ -37,7 +36,7 @@
             </div>
         </div>
     </div>
-    <div class="main-content">
+    <div class="main-content" id="main-content">
         <div class="main-content-1">
             <div class="main-content-1-align">
                 <div class="main-content-1-element">
@@ -73,7 +72,55 @@
                 </span>
             </div>
         </div>
-        <div class="floting-window">
+        <div class="floting-window1" id="floting-window1">
+            <p>Last updated: 12/2019</p>
+            <h1>The Complete Financial Analyst Course 2019</h1>
+            <div>
+                <span id="bestseller">
+                    BESTSELLER
+                </span>
+                <div>
+                    in Digital Marketing | Marketing
+                </div>
+            </div>
+            <p>
+                <i class="fas fa-play-circle"></i> 316 lectures <i class="far fa-clock"></i> 18 hours <i class="fas fa-sliders-h"></i> All Levels <i class="fas fa-closed-captioning"></i>
+            </p>
+            <p>
+                Excel, Accounting, Financial Statement Analysis, Business Analysis, Financial Math, PowerPoint: Everything is Included!
+            </p>
+            <ul>
+                <li>Work comfortably with Microsoft Excel</li>
+                <li>Format spreadsheets in a professional way</li>
+                <li>Be much faster carrying out regular tasks</li>
+            </ul>
+            <button>Add to cart</button> <i class="far fa-heart" style="color: #E04F52; transform: translateX(25px);"></i>
+        </div>
+        <div class="floting-window2" id="floting-window2">
+            <p>Last updated: 12/2019</p>
+            <h1>The Complete Financial Analyst Course 2019</h1>
+            <div>
+                <span id="bestseller">
+                    BESTSELLER
+                </span>
+                <div>
+                    in Digital Marketing | Marketing
+                </div>
+            </div>
+            <p>
+                <i class="fas fa-play-circle"></i> 316 lectures <i class="far fa-clock"></i> 18 hours <i class="fas fa-sliders-h"></i> All Levels <i class="fas fa-closed-captioning"></i>
+            </p>
+            <p>
+                Excel, Accounting, Financial Statement Analysis, Business Analysis, Financial Math, PowerPoint: Everything is Included!
+            </p>
+            <ul>
+                <li>Work comfortably with Microsoft Excel</li>
+                <li>Format spreadsheets in a professional way</li>
+                <li>Be much faster carrying out regular tasks</li>
+            </ul>
+            <button>Add to cart</button> <i class="far fa-heart" style="color: #E04F52; transform: translateX(25px);"></i>
+        </div>
+        <div class="floting-window3" id="floting-window3">
             <p>Last updated: 12/2019</p>
             <h1>The Complete Financial Analyst Course 2019</h1>
             <div>
@@ -117,7 +164,7 @@
                 </div>
                 <div class="main-content-3-element-2-subelement-2">
                     <div class="main-content-3-element-2-subelement-2-2" id="main-content-3-element-2-subelement-2-2">
-                        <div class="main-content-3-element-2-subelement-2-elements">
+                        <div class="main-content-3-element-2-subelement-2-elements" id="element-1">
                             <a href="#">
                                 <div><img src="images/bigimg1.jpg" height="40%" width="100%"></div>
                                 <div class="main-content-3-element-2-subelement-2-elements-text">
@@ -139,7 +186,7 @@
                                 
                             </a>
                         </div>
-                        <div class="main-content-3-element-2-subelement-2-elements" >
+                        <div class="main-content-3-element-2-subelement-2-elements" id="element-2">
                             <a href="#">
                                 <div><img src="images/bigimg2.jpg" height="40%" width="100%"></div>
                                 <div class="main-content-3-element-2-subelement-2-elements-text">
@@ -160,7 +207,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="main-content-3-element-2-subelement-2-elements" >
+                        <div class="main-content-3-element-2-subelement-2-elements" id="element-3">
                             <a href="#">
                                 <div><img src="images/bigimg3.jpg" height="40%" width="100%"></div>
                                 <div class="main-content-3-element-2-subelement-2-elements-text">
@@ -292,9 +339,9 @@
             <div class="main-content-5-align">
                 <p>Students are viewing</p>
                 <span>
-                    <button  id="main-content-5-btn-left" onclick="left()"><i class="fas fa-chevron-left"></i></button>
+                    <button  id="main-content-5-btn-left"><i class="fas fa-chevron-left"></i></button>
 
-                    <button id="main-content-5-btn-right" onclick="right()"><i class="fas fa-chevron-right"></i></button>
+                    <button id="main-content-5-btn-right"><i class="fas fa-chevron-right"></i></button>
                     
                    
                    
@@ -788,8 +835,9 @@
             </div>
         </div>
     </div>
-
-    
+    <input type="hidden" id="input-scroll" value="0">
+    <script src="script.js"></script>
+   
 
 </body>
 </html>
