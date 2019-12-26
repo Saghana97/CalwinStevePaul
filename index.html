@@ -15,13 +15,12 @@
                 <a href="#"><img src="images/headerlogo.png" alt="unknown" width="126px" height="65px"></a>
             </div>
             <div class="header-left">
-                <div class="header-left-1">
+                <div class="header-left-1" id="categories">
                     <button><i class="fas fa-bars"></i> <span>Categories</span></button>
-                   
-                    
+
                 </div>
                 <div class="header-left-2">
-                    <div><input type="text" placeholder="Search for any thing"> </div>
+                    <div><input type="text" placeholder="Search for any thing" id="search" onchange="search()"> </div>
                     <div><button><i class="fas fa-search"></i></button></div>
                 </div>
 
@@ -35,6 +34,28 @@
                 
             </div>
         </div>
+    </div>
+    <div class="dropdowndiv" id="dropdowndiv">
+        <ul class="dropdown" id="dropdown">
+            <li id="dd1" onmouseover="dd1()"> <i class="far fa-file-code"></i>Development</li>
+            <li id="dd2" onmouseover="dd2()"> <i class="fas fa-chart-bar"></i>Business</li>
+            <li id="dd3" onmouseover="dd3()"><i class="fas fa-wallet"></i>Finance & Accounting</li>
+            <li id="dd4"> <i class="fas fa-tv"></i>IT & Software</li>
+            <li id="dd5"> <i class="far fa-clipboard"></i>Office Productivity</li>
+            <li id="dd6"> <i class="fas fa-book-open"></i>Personal Development</li>
+            <li id="dd7"> <i class="fas fa-pencil-ruler"></i>Design</li>
+            <li id="dd8"> <i class="fas fa-bullseye"></i>Marketing</li>
+            <li id="dd9"> <i class="fas fa-dog"></i>lifestyle</li>
+            <li id="dd10"> <i class="fas fa-camera"></i> Photograpgy</li>
+            <li id="dd11"> <i class="fas fa-heartbeat"></i>Health & Fitness</li>
+            <li id="dd12"> <i class="fas fa-music"></i>Music</li>
+            <li id="dd13"> <i class="fab fa-react"></i>Teaching & Academics</li>
+        </ul>
+        <ul id="dropdown2" class="dropdown2" id="dropdown2" class="dropdown2">
+            
+        </ul>
+        <ul id="dropdown3" class="dropdown3">
+        </ul>
     </div>
     <div class="main-content" id="main-content">
         <div class="main-content-1">
@@ -154,12 +175,12 @@
             </div>
             <div class="main-content-3-element-2" >
                 <div class="main-content-3-element-2-subelement-1">
-                    <div>Design</div>
-                    <div>Photography</div>
-                    <div>Development</div>
-                    <div>Marketing</div>
-                    <div>IT & Software</div>
-                    <div>Personal Development</div>
+                    <div  id="main-content-3-element-2-subelement-1-btn-1" class="content-3-active" >Design</div>
+                    <div  id="main-content-3-element-2-subelement-1-btn-2" class="content-3-btn">Photography</div>
+                    <div  id="main-content-3-element-2-subelement-1-btn-3" class="content-3-btn">Development</div>
+                    <div  id="main-content-3-element-2-subelement-1-btn-4" class="content-3-btn"> Marketing</div>
+                    <div  id="main-content-3-element-2-subelement-1-btn-5" class="content-3-btn">IT & Software</div>
+                    <div  id="main-content-3-element-2-subelement-1-btn-6" class="content-3-btn">Personal Development</div  class="main-content-3-element-2-subelement-1-btn-1">
                     
                 </div>
                 <div class="main-content-3-element-2-subelement-2">
@@ -837,7 +858,7 @@
     </div>
     <input type="hidden" id="input-scroll" value="0">
     <script src="script.js"></script>
-   
+  
 
 </body>
 </html>
