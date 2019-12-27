@@ -1,6 +1,7 @@
 document.getElementById("element-1").onmouseover=function(){
-    document.getElementById("floting-window1").style.opacity = "";
     document.getElementById("floting-window1").style.display="block";
+    document.getElementById("floting-window2").style.display="none   "; 
+    document.getElementById("floting-window3").style.display="none   "; 
 }
 document.getElementById("element-1").onmouseleave=function(){
     setTimeout(() => {
@@ -11,6 +12,8 @@ document.getElementById("element-1").onmouseleave=function(){
 
 document.getElementById("element-2").onmouseover=function(){
     document.getElementById("floting-window2").style.display="block";
+    document.getElementById("floting-window1").style.display="none   "; 
+    document.getElementById("floting-window3").style.display="none   "; 
 }
 document.getElementById("element-2").onmouseleave=function(){
     setTimeout(() => {
@@ -20,6 +23,8 @@ document.getElementById("element-2").onmouseleave=function(){
 
 document.getElementById("element-3").onmouseover=function(){
     document.getElementById("floting-window3").style.display="block";
+    document.getElementById("floting-window2").style.display="none   "; 
+    document.getElementById("floting-window1").style.display="none   "; 
 }
 document.getElementById("element-3").onmouseleave=function(){
     setTimeout(() => {
@@ -123,6 +128,14 @@ document.getElementById("dropdown2").addEventListener("mouseover",function(){
     document.getElementById("dropdown3").style.display="block";
     
 });
+document.getElementById("dropdown3").addEventListener("mouseover",function(){
+    document.getElementById("dropdown3").style.display="block";
+    
+});
+document.getElementById("dropdown3").addEventListener("mouseleave",function(){
+    document.getElementById("dropdown3").style.display="none";
+    
+});
 document.getElementById("dropdown2").addEventListener("mouseleave",function(){
     document.getElementById("dropdown3").style.display="none";
     
@@ -197,7 +210,7 @@ function dd2(){
         var element= document.getElementById("dropdown2");
         element.appendChild(list);
     }
-    
+
 }
 function dd3(){
     var arr1=[
@@ -299,10 +312,14 @@ function innerlist3(){
 }
 
 function search(e){
+    document.getElementById("dropdown").style.display="block";
+
     var scearch,ul,li;
     scearch = document.getElementById("search").value;
     ul= document.getElementById("dropdown");
     li=ul.getElementsByTagName("li");
+    // console.log(li)
+    // console.log(ul)
     for( var i=0;i<li.length;i++){
         if(li[i].textContent.toUpperCase().indexOf(scearch.toString().toUpperCase())>-1){
             li[i].style.display="block"
