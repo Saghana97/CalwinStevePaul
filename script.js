@@ -1,331 +1,126 @@
-document.getElementById("element-1").onmouseover=function(){
-    document.getElementById("floting-window1").style.display="block";
-    document.getElementById("floting-window2").style.display="none   "; 
-    document.getElementById("floting-window3").style.display="none   "; 
-}
-document.getElementById("element-1").onmouseleave=function(){
-    setTimeout(() => {
-        document.getElementById("floting-window1").style.display="none   "; 
-    }, 500);
 
-}
-
-document.getElementById("element-2").onmouseover=function(){
-    document.getElementById("floting-window2").style.display="block";
-    document.getElementById("floting-window1").style.display="none   "; 
-    document.getElementById("floting-window3").style.display="none   "; 
-}
-document.getElementById("element-2").onmouseleave=function(){
-    setTimeout(() => {
-        document.getElementById("floting-window2").style.display="none   "; 
-    }, 500);
-}
-
-document.getElementById("element-3").onmouseover=function(){
-    document.getElementById("floting-window3").style.display="block";
-    document.getElementById("floting-window2").style.display="none   "; 
-    document.getElementById("floting-window1").style.display="none   "; 
-}
-document.getElementById("element-3").onmouseleave=function(){
-    setTimeout(() => {
-        document.getElementById("floting-window3").style.display="none   "; 
-    }, 500);}
-function moveright(){
-  document.getElementById("main-content-3-element-2-subelement-2-2").style.transform=" translateX(-640px)";
-}
-function moveleft(){
-    document.getElementById("main-content-3-element-2-subelement-2-2").style.transform=" translateX(40px)";
-}
-var x= document.getElementById("input-scroll");
-var y=0;
-
-document.getElementById("main-content-5-btn-right").addEventListener("click",function(){
-    y=-(parseInt(x.value)+85);
-    if(y*-1<=340){
-        console.log(y)
-        document.getElementById("scroll").style.transform="translateX("+y+"vw)";
-        x.value=-y;
-    }
-});
-var a= document.getElementById("input-scroll");
-var b=0;
-document.getElementById("main-content-5-btn-left").addEventListener("click",function(){
-    b=-(parseInt(a.value)-85);
-    if(b<=0){
-        console.log(b)
-        document.getElementById("scroll").style.transform="translateX("+b+"vw)";
-        a.value=-b;
-    }
-
-}); 
-
-document.getElementById("main-content-3-element-2-subelement-1-btn-1").addEventListener ("click",function(){
-    document.getElementById("main-content-3-element-2-subelement-1-btn-1").classList.replace("content-3-btn","content-3-active");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-2").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-3").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-4").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-5").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-6").classList.replace("content-3-active","content-3-btn");
-
-});
-
-document.getElementById("main-content-3-element-2-subelement-1-btn-2").addEventListener ("click",function(){
-    document.getElementById("main-content-3-element-2-subelement-1-btn-2").classList.replace("content-3-btn","content-3-active");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-1").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-3").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-4").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-5").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-6").classList.replace("content-3-active","content-3-btn");
-
-});
-
-document.getElementById("main-content-3-element-2-subelement-1-btn-3").addEventListener ("click",function(){
-    document.getElementById("main-content-3-element-2-subelement-1-btn-3").classList.replace("content-3-btn","content-3-active");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-1").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-2").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-4").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-5").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-6").classList.replace("content-3-active","content-3-btn");
-});
-
-document.getElementById("main-content-3-element-2-subelement-1-btn-4").addEventListener ("click",function(){
-    document.getElementById("main-content-3-element-2-subelement-1-btn-4").classList.replace("content-3-btn","content-3-active");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-1").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-2").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-3").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-5").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-6").classList.replace("content-3-active","content-3-btn");
-});
-
-document.getElementById("main-content-3-element-2-subelement-1-btn-5").addEventListener ("click",function(){
-    document.getElementById("main-content-3-element-2-subelement-1-btn-5").classList.replace("content-3-btn","content-3-active");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-1").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-2").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-3").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-4").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-6").classList.replace("content-3-active","content-3-btn");
-});
-
-document.getElementById("main-content-3-element-2-subelement-1-btn-6").addEventListener ("click",function(){
-    document.getElementById("main-content-3-element-2-subelement-1-btn-6").classList.replace("content-3-btn","content-3-active");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-1").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-2").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-3").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-4").classList.replace("content-3-active","content-3-btn");
-    document.getElementById("main-content-3-element-2-subelement-1-btn-5").classList.replace("content-3-active","content-3-btn");
-});
+var totalbudget
+var education,transport,food;
+var educationarr=[];
+var transportarr=[];
+var foodarr=[];
 
 
-document.getElementById("categories").addEventListener("mouseover",function(){
-    document.getElementById("dropdown").style.display="block";
-    
-});
-document.getElementById("dropdown").addEventListener("mouseover",function(){
-    document.getElementById("dropdown2").style.display="block";
-    
-});
-document.getElementById("dropdown2").addEventListener("mouseover",function(){
-    document.getElementById("dropdown3").style.display="block";
-    
-});
-document.getElementById("dropdown3").addEventListener("mouseover",function(){
-    document.getElementById("dropdown3").style.display="block";
-    
-});
-document.getElementById("dropdown3").addEventListener("mouseleave",function(){
-    document.getElementById("dropdown3").style.display="none";
-    
-});
-document.getElementById("dropdown2").addEventListener("mouseleave",function(){
-    document.getElementById("dropdown3").style.display="none";
-    
-});
-document.getElementById("dropdowndiv").addEventListener("mouseleave",function(){
-    document.getElementById("dropdown2").style.display="none";
-    document.getElementById("dropdown").style.display="none";
+
+
+const submitclick= ()=>{
+    education=parseInt(document.getElementById("education").value);
+    transport=parseInt(document.getElementById("transport").value);
+    food=parseInt(document.getElementById("food").value);
+
+    totalbudget=education+transport+food;
 
     
-});
 
-
-function dd1(){
-    var arr1=[
-        "All Development",
-        "Web Development",
-        "Data Science",
-        "Mobile Apps",
-        "Programming Languages",
-        "Game Development",
-        "Databases",
-        "Software Testing",
-        "Software Engineering",
-        "Development Tools",
-        "E-Commerce"
-    ];
-   
-    var element= document.getElementById("dropdown2");
-    element.innerHTML = " ";
-            
-    for(var i=0; i<arr1.length ;i++){
-        var list = document.createElement("li");     
-        list.setAttribute("id","innerlist"+(i+1));
-        list.setAttribute("onmouseover","innerlist"+(i+1)+"()");
-        list.innerHTML = arr1[i];
-        var element= document.getElementById("dropdown2");
-        element.appendChild(list);
-    }
-    // arr1.forEach((val,i)=>{
-    //     `<li id="innerlist ${i}" onmouseover="innerlist${i+1}()">${val}</li>`
-    //     document.getElementById()
-    // })
+    document.getElementById("innerContainer1").style.display="none";
+    document.getElementById("innerContainer2").style.display="block";
+    document.getElementById("budgetDisplay").innerHTML= " Monthly budget is Rs-"+totalbudget;
+    // console.log(totalbudget+", "+education+", "+transport+", "+food);
     
 }
 
-function dd2(){
-    var arr1=[
-        "All Business",
-        "Finance",
-        "Entrepreneurship",
-        "Communications",
-        "Management",
-        "Sales",
-        "Strategy",
-        "Operations",
-        "Project Management",
-        "Business Law",
-        "Data & Analytics",
-        "Home Business",
-        "Human Resources",
-        "Industry",
-        "Media",
-        "Real Estate",
-        "Other",
-    ];
-    var element= document.getElementById("dropdown2");
-    element.innerHTML = " ";
-            
-    for(var i=0; i<arr1.length ;i++){
-        var list = document.createElement("li");
-        list.innerHTML = arr1[i]
-        var element= document.getElementById("dropdown2");
-        element.appendChild(list);
-    }
 
-}
-function dd3(){
-    var arr1=[
-        "All IT & Software",
-        "IT Certification",
-        "Network & Security",
-        "Hardware",
-        "Operating Systems",
-        "Other",
+var count=0;
+document.getElementById("addRow").addEventListener("click",function(){
+    count+=1;
+    var row = document.createElement("tr");
+    var cell1 = document.createElement("td");
+    cell1.innerHTML=` 
+    <select id="select${count}" >
+        <option value="0">Education</option>
+        <option value="1">Transport</option>
+        <option value="2">Food</option>
+    </select>`;
+
+    
+    var cell2 = document.createElement("td");
+    cell2.innerHTML=`<input id="discreption${count}" type="text" placeholder="Description">`;
+    var cell3 = document.createElement("td");
+    cell3.innerHTML=`<input id="amount${count}" type="number" placeholder="Amount">`;
+
+    row.appendChild(cell1);
+	row.appendChild(cell2);
+    row.appendChild(cell3);
+
+    var element= document.getElementById("table1");
+    element.appendChild(row);
+
         
-    ];
-    var element= document.getElementById("dropdown2");
-    element.innerHTML = " ";
-            
-    for(var i=0; i<arr1.length ;i++){
-        var list = document.createElement("li");
-        list.innerHTML = arr1[i]
-        var element= document.getElementById("dropdown2");
-        element.appendChild(list);
-    }
-    
-}   
+});
 
-
-function innerlist1(){
-  
-    var arr1=[
-        "Popular Topics",
-        "All Web Development",
-        "JavaScript",
-        "Angular",
-        "React",
-        "CSS",
-        "Node.Js",
-        "PHP",
-        "Vue JS",
-        "Django",
-    ]
-    var element= document.getElementById("dropdown3");
-    element.innerHTML = " ";
-            
-    for(var i=0; i<arr1.length ;i++){
-        var list = document.createElement("li");
-        list.innerHTML = arr1[i]
-        var element= document.getElementById("dropdown3");
-        element.appendChild(list);
-    }
-    
-}
-
-function innerlist2(){
-  
-    var arr1=[
-        "All Web Development",
-        "JavaScript",
-        "Angular",
-        "React",
-        "CSS",
-        "Node.Js",
-        "PHP",
-        "Vue JS",
-        "Django",
-    ]
-    var element= document.getElementById("dropdown3");
-    element.innerHTML = " ";
-            
-    for(var i=0; i<arr1.length ;i++){
-        var list = document.createElement("li");
-        list.innerHTML = arr1[i]
-        var element= document.getElementById("dropdown3");
-        element.appendChild(list);
-    }
-    
-}
-function innerlist3(){
-  
-    var arr1=[
-        "Popular Topics",
-        "All Data Science",
-        "Machine Learning",
-        "Python",
-        "Deep Learning",
-        "Data Analysis",
-        "Artificial Intelligence",
-        "TensorFlow",
-        "R",
-        "Neural Networks",
-    ]
-    var element= document.getElementById("dropdown3");
-    element.innerHTML = " ";
-            
-    for(var i=0; i<arr1.length ;i++){
-        var list = document.createElement("li");
-        list.innerHTML = arr1[i]
-        var element= document.getElementById("dropdown3");
-        element.appendChild(list);
-    }
-    
-}
-
-function search(e){
-    document.getElementById("dropdown").style.display="block";
-
-    var scearch,ul,li;
-    scearch = document.getElementById("search").value;
-    ul= document.getElementById("dropdown");
-    li=ul.getElementsByTagName("li");
-    // console.log(li)
-    // console.log(ul)
-    for( var i=0;i<li.length;i++){
-        if(li[i].textContent.toUpperCase().indexOf(scearch.toString().toUpperCase())>-1){
-            li[i].style.display="block"
+const submitclick2=()=>{
+    console.log("submitting")
+    var l = document.getElementById("table1").children.length;
+    for(var i = 0;i<l;i++){
+        category = parseInt(document.getElementById("select"+i).value);
+        discreption = document.getElementById("discreption"+i).value
+        amount = parseInt(document.getElementById("amount"+i).value);
+        obj={};
+        switch(category){
+            case 0:
+               obj={name:discreption, amount:amount};
+                educationarr.push(obj);
+                // console.log(obj)
+                break;
+            case 1:
+                obj={name:discreption, amount:amount};
+                transportarr.push(obj);
+                break;
+            case 2:
+                obj={name:discreption, amount:amount};
+                foodarr.push(obj);
+                break;                          
         }
-        else{
-            li[i].style.display="none"
-        }
+       
     }
-}
+    console.log(education,transport,food);
+    console.log(educationarr,transportarr,foodarr);
+
+
+    document.getElementById("innerContainer2").style.display="none";
+    document.getElementById("innerContainer3").style.display="block";
+    
+    var totalEdu = 0;
+    var totalTrans = 0;
+    var totalFood = 0;
+
+    for(var i=0;i<educationarr.length;i++){
+        totalEdu+= educationarr[i].amount;
+    }
+    for(var i=0;i<transportarr.length;i++){
+        totalTrans+= transportarr[i].amount;
+    }
+    for(var i=0;i<foodarr.length;i++){
+        totalFood+= foodarr[i].amount;
+    }
+    console.log(totalEdu,totalTrans,totalFood);
+    var totalExpence= totalEdu+totalTrans+totalFood;
+
+    document.getElementById("table2").innerHTML=`
+    <tr>
+        <td>Education</td>
+        <td>${totalEdu}</td>
+        <td>${education-totalEdu}</td>
+    </tr>
+    <tr>
+        <td>Transport</td>
+        <td>${totalTrans}</td>
+        <td>${transport-totalTrans}</td>
+    </tr>
+    <tr>
+        <td>Food</td>
+        <td>${totalFood}</td>
+        <td>${food-totalFood}</td>
+    </tr>
+    <tr>
+        <td>TOTAL</td>
+        <td>${totalExpence}</td>
+        <td>${totalbudget-totalExpence}</td>
+    </tr>
+    `;
+} 
