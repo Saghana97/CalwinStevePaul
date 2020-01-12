@@ -1,0 +1,19 @@
+.content{
+    display: flex;
+    margin: 25px;
+}
+.left-content-box{
+    padding: 10px;
+    border: 2px solid black ;
+    margin: 20px;
+}
+.left-content{
+    width: 20vw;
+}
+.right-content{
+    width: 70vw;
+    padding: 10px;
+    border: 2px solid black ;
+    margin: 20px;
+
+}
